@@ -1,0 +1,11 @@
+/
+  index.html
+  styles.css
+  script.js
+  /assets
+    /bw
+    /animals
+    /digital
+    /botanical
+  /data
+    gallery.json
