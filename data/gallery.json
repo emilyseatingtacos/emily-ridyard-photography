@@ -1,0 +1,34 @@
+[
+  {
+    "id": "quiet-street-study",
+    "title": "Quiet Street Study",
+    "category": "bw",
+    "image": "assets/bw/quiet-street-study.jpg",
+    "alt": "Black and white street photography study with strong shadows and quiet atmosphere.",
+    "featured": true
+  },
+  {
+    "id": "companion-portrait",
+    "title": "Companion Portrait",
+    "category": "animals",
+    "image": "assets/animals/companion-portrait.jpg",
+    "alt": "Gentle animal portrait focused on expression and natural connection.",
+    "featured": true
+  },
+  {
+    "id": "digital-dreamscape",
+    "title": "Digital Dreamscape",
+    "category": "digital",
+    "image": "assets/digital/digital-dreamscape.jpg",
+    "alt": "Digital photography artwork with layered texture, color, and abstract atmosphere.",
+    "featured": false
+  },
+  {
+    "id": "botanical-detail",
+    "title": "Botanical Detail",
+    "category": "botanical",
+    "image": "assets/botanical/botanical-detail.jpg",
+    "alt": "Close botanical photography study emphasizing natural form and delicate detail.",
+    "featured": false
+  }
+]

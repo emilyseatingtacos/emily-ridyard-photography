@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A visual project hub for tracking AI-assisted tools, content systems, product flips, 3D printing, listings, and portfolio work."
+    />
+    <title>Project Hub Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Dashboard navigation">
+        <a class="brand" href="#top" aria-label="Project Hub home">
+          <span class="brand__mark">PH</span>
+          <span>
+            <strong>Project Hub</strong>
+            <small>Simultaneous build lab</small>
+          </span>
+        </a>
+
+        <nav class="sidebar__nav" aria-label="Primary navigation">
+          <a href="#overview">Overview</a>
+          <a href="#projects">Projects</a>
+          <a href="#focus">Focus Board</a>
+          <a href="#notes">Quick Notes</a>
+        </nav>
+
+        <section class="sidebar__panel" aria-labelledby="workspace-title">
+          <h2 id="workspace-title">Workspace Mode</h2>
+          <p>Read first → plan → edit one slice → test → ship.</p>
+        </section>
+      </aside>
+
+      <main class="dashboard" id="top">
+        <header class="hero" id="overview">
+          <div>
+            <p class="eyebrow">Controlled coding lab</p>
+            <h1>One dashboard to work on every project without losing the thread.</h1>
+            <p class="hero__intro">
+              Track your AI-assisted content systems, craft flips, 3D-print experiments, resale
+              tools, and portfolio builds from a single visual hub.
+            </p>
+          </div>
+          <div class="hero__card" aria-label="Current command center status">
+            <span class="status-dot"></span>
+            <p>Active workspace</p>
+            <strong id="active-count">0 projects loaded</strong>
+            <small>Use the filters below to switch focus fast.</small>
+          </div>
+        </header>
+
+        <section class="metrics" aria-label="Project metrics">
+          <article class="metric-card">
+            <span>Total Projects</span>
+            <strong id="metric-total">0</strong>
+          </article>
+          <article class="metric-card">
+            <span>High Priority</span>
+            <strong id="metric-high">0</strong>
+          </article>
+          <article class="metric-card">
+            <span>Average Progress</span>
+            <strong id="metric-progress">0%</strong>
+          </article>
+          <article class="metric-card">
+            <span>Next Up</span>
+            <strong id="metric-next">—</strong>
+          </article>
+        </section>
+
+        <section class="panel" id="projects" aria-labelledby="projects-title">
+          <div class="panel__header">
+            <div>
+              <p class="eyebrow">Project switcher</p>
+              <h2 id="projects-title">Active projects</h2>
+            </div>
+            <div class="toolbar" aria-label="Project tools">
+              <label class="search-box">
+                <span class="sr-only">Search projects</span>
+                <input id="project-search" type="search" placeholder="Search projects, tags, status..." />
+              </label>
+              <select id="priority-filter" aria-label="Filter by priority">
+                <option value="all">All priorities</option>
+                <option value="High">High priority</option>
+                <option value="Medium">Medium priority</option>
+                <option value="Low">Low priority</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="project-grid" id="project-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="workspace-grid" id="focus">
+          <article class="panel focus-panel" aria-labelledby="focus-title">
+            <p class="eyebrow">Today&apos;s focus</p>
+            <h2 id="focus-title">Pick one concrete next action.</h2>
+            <div id="focus-card" class="focus-card"></div>
+          </article>
+
+          <article class="panel checklist-panel" aria-labelledby="checklist-title">
+            <p class="eyebrow">Ship loop</p>
+            <h2 id="checklist-title">Beginner-safe workflow</h2>
+            <ol class="checklist">
+              <li>Choose one project card.</li>
+              <li>Write the next tiny deliverable.</li>
+              <li>Change one file or one workflow.</li>
+              <li>Run the simplest useful test.</li>
+              <li>Commit the proof and capture the lesson.</li>
+            </ol>
+          </article>
+        </section>
+
+        <section class="panel notes-panel" id="notes" aria-labelledby="notes-title">
+          <div>
+            <p class="eyebrow">Scratchpad</p>
+            <h2 id="notes-title">Quick notes that stay in your browser.</h2>
+            <p>
+              Use this for project ideas, reminders, or the next Codex prompt. Notes are saved in
+              local storage on this device.
+            </p>
+          </div>
+          <label class="notes-field">
+            <span class="sr-only">Project notes</span>
+            <textarea id="quick-notes" rows="7" placeholder="Example: Build projectflip.py intake flow, then test with three thrift items..."></textarea>
+          </label>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

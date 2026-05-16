@@ -1,0 +1,62 @@
+[
+  {
+    "id": "vetcsr-content-engine",
+    "name": "TheVetCSR Caption Engine",
+    "type": "Content system",
+    "status": "Building",
+    "priority": "High",
+    "progress": 72,
+    "focus": "Turn veterinary education topics into polished social captions and content prompts.",
+    "nextAction": "Draft 10 caption templates for pet parent education posts.",
+    "due": "This week",
+    "tags": ["TheVetCSR", "content", "portfolio"]
+  },
+  {
+    "id": "projectflip-helper",
+    "name": "ProjectFlip Helper",
+    "type": "Product flip tool",
+    "status": "Planning",
+    "priority": "High",
+    "progress": 38,
+    "focus": "Convert item notes, materials, and target price into three sellable flip ideas.",
+    "nextAction": "Create the first command-line prompt flow for item intake.",
+    "due": "Next 3 days",
+    "tags": ["craft", "resale", "AI tool"]
+  },
+  {
+    "id": "gcode-generator",
+    "name": "Tiny G-code Generator",
+    "type": "3D printing lab",
+    "status": "Researching",
+    "priority": "Medium",
+    "progress": 24,
+    "focus": "Generate small proof-of-concept 3D print files from structured prompts.",
+    "nextAction": "Define safe starter shapes and printer constraints.",
+    "due": "Later",
+    "tags": ["3D print", "fabrication", "prototype"]
+  },
+  {
+    "id": "ebay-listing-generator",
+    "name": "eBay Listing Generator",
+    "type": "Cash system",
+    "status": "Ready next",
+    "priority": "Medium",
+    "progress": 55,
+    "focus": "Transform item notes into titles, descriptions, pricing notes, and photo checklists.",
+    "nextAction": "Add a pricing confidence field and photo shot list output.",
+    "due": "This month",
+    "tags": ["resale", "listing", "workflow"]
+  },
+  {
+    "id": "photography-portfolio",
+    "name": "Emily Ridyard Photography",
+    "type": "Portfolio site",
+    "status": "Scaffolded",
+    "priority": "Medium",
+    "progress": 45,
+    "focus": "Build a polished static site for photography categories and contact flow.",
+    "nextAction": "Replace placeholder visuals with finished images and real contact details.",
+    "due": "Before launch",
+    "tags": ["portfolio", "Netlify", "visual"]
+  }
+]
