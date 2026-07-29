@@ -2,10 +2,13 @@
   index.html
   styles.css
   script.js
+  README.md
+  STRUCTURE.md
   /assets
     /bw
     /animals
     /digital
     /botanical
   /data
+    projects.json
     gallery.json
